@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!--AGREGAR ESTO PARA ASOCIAR LAS HOJAS DE ESTILO DE BOOTSTRAP-->
+    <title>Signos Zodiacales</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="http://127.0.0.1:5500/index.html"><li>HOME</li></a>
+                <a href="#signos"><li>SIGNOS</li></a>
+                <a href="#mas"><li>MAS</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="presentacion">
+        <h1>Signos Zodiacales</h1>
+        <p>A continuación, te contamos los 12 signos del zodíaco con las fechas dentro de las cuales debemos nacer para pertenecer a él.</p>
+    </div>
+
+    <div id="signos">
+      <div class="contenedor">
+        <div class="caja">
+            <img src="./imagenes/Acuario.webp" alt="Acuario">
+            <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/acuario/" target="_blank">ACUARIO</a></h1>
+            <h2>del 20 de Enero al 18 de Febrero</h2>
+            <div id="acuario">
+              <p>Simpático, original y brillante, Acuario también es un signo muy humanitario, al mismo tiempo que independiente e intelectual. Sus puntos negativos se encuentran en su inestabilidad e imprecisión y en su tendencia a llevar la contraria casi por sistema.</p>
+            </div>
+            <button onclick='muestra_oculta("acuario")' class="btn btn-primary" form="acuario">+</button>
+        </div>
+        <div class="caja">
+            <img src="./imagenes/Piscis.webp" alt="Piscis">
+            <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/piscis/" target="_blank">PISCIS</a></h1>
+            <h2>del 18 de Febrero al 20 de Marzo</h2>
+            <div id="piscis">
+              <p>Piscis es un signo mutable y de agua, también es el último signo del zodiaco, precisamente por eso, es el más rico y complejo de todos. Sensible ante el sufrimiento de los demás, responde con buena voluntad y ganas de ayudar.</p>
+            </div>
+            <button onclick='muestra_oculta("piscis")' class="btn btn-primary" form="piscis">+</button>
+        </div>
+        <div class="caja">
+            <img src="./imagenes/Aries.webp" alt="Aries">
+            <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/aries/" target="_blank">ARIES</a></h1>
+            <H2>del 21 de Marzo al 19 de abril</H2>
+            <div id="aries">
+              <p>Aries forma parte de los signos cardinales y al mismo tiempo es un signo de fuego; también es el primer signo del zodíaco, precisamente por eso, simboliza el inicio, la creación. Se caracteriza por ser una persona rebosante de energía y entusiasmo; avanzada y aventurera, adora la libertad, los retos y las nuevas ideas.</p>
+            </div>  
+            <button onclick='muestra_oculta("aries")' class="btn btn-primary" form="aries">+</button>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <div class="caja">
+          <img src="./imagenes/Tauro.webp" alt="Tauro">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/tauro/" target="_blank">TAURO</a></h1>
+          <h2>del 20 de Abril al 20 de Mayo</h2>
+          <div id="tauro">
+            <p>La proyección del Sol en su nacimiento suele influir para que sean personas firmes, decididas y constantes en varios sentidos. También adoran sentir seguridad, por eso la buscan tanto, es como una necesidad constante en sus vidas. Un Tauro es un ser decidido, pragmático y tiene una enorme fuerza de voluntad.</p>
+          </div>
+          <button onclick='muestra_oculta("tauro")' class="btn btn-primary" form="tauro">+</button>  
+        </div>
+        <div class="caja">
+          <img src="./imagenes/Geminis.webp" alt="Geminis">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/geminis/" target="_blank">GEMINIS</a></h1>
+          <h2>del 21 de Mayo al 20 de Junio</h2>
+          <div id="geminis">
+            <p>Géminis es un signo mutable que forma parte del elemento aire; como signo de los gemelos, su carácter es doble y bastante contradictorio por complejo. Por una parte es capaz de adaptarse con facilidad y rapidez a todo, pero por otra puede resultar hipócrita. Su distintivo común es la comunicación y el ingenio.</p>
+          </div>
+          <button onclick='muestra_oculta("geminis")' class="btn btn-primary" form="geminis">+</button>
+        </div>
+        <div class="caja">
+          <img src="./imagenes/Cancer.webp" alt="Cancer">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/cancer/" target="_blank">CANCER</a></h1>
+          <H2>del 21 de Junio al 22 de Julio</H2>
+          <div id="cancer">
+            <p>Las personas con el signo del zodiaco Cáncer son a menudo consideradas las más sensibles y dramáticas del horóscopo. Son muy familiares, emocionales, intuitivos y espirituales, esto último puede ser un punto débil o una fortaleza según cómo lo canalicen.</p>
+          </div>
+          <button onclick='muestra_oculta("cancer")' class="btn btn-primary" form="cancer">+</button>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <div class="caja">
+          <img src="./imagenes/Leo.webp" alt="Leo">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/leo/" target="_blank">LEO</a></h1>
+          <h2>del 23 de Julio al 22 de Agosto</h2>
+          <div id="leo">
+            <p>Los Leones son entusiastas, creativos y muchas veces comprensivos con las circunstancias de los demás; adoran los lujos y la aventura; correr riesgos les motiva. También se caracterizan por tener un elevado concepto de todo, especialmente, de sí mismos, por eso huyen de la vulgaridad.</p>
+          </div>
+          <button onclick='muestra_oculta("leo")' class="btn btn-primary" form="leo">+</button>
+        </div>
+        <div class="caja">
+          <img src="./imagenes/Virgo.webp" alt="Virgo">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/virgo/" target="_blank">VIRGO</a></h1>
+          <h2>del 23 de Agosto al 22 de Septiembre</h2>
+          <div id="virgo">
+            <p>Virgo es un signo mutable y de tierra; representado por una virgen, es un signo caracterizado por su espíritu crítico, precisión, reserva, paciencia y convencionalismo. También es lógico, metódico y aplicado, le gusta aprender y es capaz de analizar las situaciones más complejas con una claridad pasmosa.</p>
+          </div>
+          <button onclick='muestra_oculta("virgo")' class="btn btn-primary" form="virgo">+</button>
+        </div>
+        <div class="caja">
+          <img src="./imagenes/Libra.webp" alt="Libra">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/libra/" target="_blank">LIBRA</a></h1>
+          <H2>del 23 de Septiembre al 22 de Octubre</H2>
+          <div id="libra">
+            <p>Libra es un signo cardinal y de aire, se encuentra además entre los signos más refinados del zodíaco; tiene elegancia, encanto, diplomacia y buen gusto, ama la belleza, es muy curioso por naturaleza y odia los conflictos. Sus puntos negativos a veces son la frivolidad y un carácter voluble.</p>
+          </div>
+          <button onclick='muestra_oculta("libra")' class="btn btn-primary" form="libra">+</button>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <div class="caja">
+          <img src="./imagenes/Escorpio.webp" alt="Escorpio">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/escorpio/" target="_blank">ESCORPIO</a></h1>
+          <h2>del 23 de Octubre al 21 de Noviembre</h2>
+          <div id="escorpio">
+            <p>Escorpio es un signo fijo y de agua; su potencia y energía emocional son únicas en todo el zodíaco. Tiene mucha imaginación e intuición, además de una gran capacidad para el análisis, fuerza de voluntad y firmeza, aunque también es muy sensible y emocional consigo mismo y con el entorno.</p>
+          </div>
+          <button onclick='muestra_oculta("escorpio")' class="btn btn-primary" form="escorpio">+</button>
+        </div>
+        <div class="caja">
+          <img src="./imagenes/Sagitario.webp" alt="Sagitario">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/sagitario/" target="_blank">SAGITARIO</a></h1>
+          <h2>del 22 de Noviembre al 21 de Diciembre</h2>
+          <div id="sagitario">
+            <p>Las personas de Sagitario son intuitivas, buenas organizadoras, generosas (pero sin malgastar) y muy cuidadosas, lo que las convierte en buenas gestoras de situaciones y proyectos.</p>
+          </div>
+          <button onclick='muestra_oculta("sagitario")' class="btn btn-primary" form="sagitario">+</button>
+        </div>
+        <div class="caja">
+          <img src="./imagenes/Capricornio.webp" alt="Capricornio">
+          <h1><a href="https://www.zodiacsign.com/es/signos-del-zodiaco/capricornio/" target="_blank">CAPRICORNIO</a></h1>
+          <H2>del 22 de Diciembre al 19 de Enero</H2>
+          <div id="capricornio">
+            <p>Capricornio es un signo cardinal y de tierra, y uno de los signos del zodíaco más constante, sólido y apacible. También se caracteriza por ser prudente y práctico en todos los asuntos que le conciernen. Sus aspectos más negativos tienden hacia el pesimismo, la fijeza y la melancolía.</p>
+          </div>
+          <button onclick='muestra_oculta("capricornio")' class="btn btn-primary" form="capricornio">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mas">
+      <h1>MAS INFORMACION</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DlpZy_bWDh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
